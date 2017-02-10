@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load django_markdown %}
+
+{% block content %}
+
+	<form action="" method="post">
+		{{ contact_form.as_p }}
+		{% csrf_token %}
+		<input type="submit" value="Submit">
+	 </form>
+
+{% endblock %}
+
